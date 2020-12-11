@@ -19,7 +19,7 @@ module.exports = (isProd) => ({
       },
     },
     variants: {
-      borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
+      borderColor: ['focus-within'],
       extend: {},
     },
     plugins: [],
