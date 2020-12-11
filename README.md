@@ -17,4 +17,5 @@ theme: {
 See details in `webpack.config.js`
 
 Add space as place holders for the field you want floating labels
+
 For using only place holders you can use it directly just don't add label
