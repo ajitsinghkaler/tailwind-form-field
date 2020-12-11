@@ -1,7 +1,8 @@
 # Form Field Usage
 
 Add two custom Tailwind configration
-      borderColor: ['focus-within'],
+borderColor: ['focus-within'],
+
 theme: {
   extend: {
     transformOrigin: {
