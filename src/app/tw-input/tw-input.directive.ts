@@ -10,13 +10,18 @@ import { ControlContainer, NgControl } from '@angular/forms';
 export class TwInputDirective {
   @Input('formControlName') formControlName: string;
   invalid = this.control.invalid;
+  private valSubscription;
   constructor(private control: NgControl) {}
 
   ngOnInit() {
     this.invalid = this.control.invalid;
-    this.control.valueChanges.subscribe(() => {
+    this.valSubscription = this.control.valueChanges.subscribe(() => {
       this.invalid = this.control.invalid;
       console.log(this.invalid);
     });
+  }
+
+  ngOnDestory(){
+    this.valSubscription.unsubscribe()
   }
 }
