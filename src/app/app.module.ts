@@ -6,6 +6,7 @@ import { FormFieldComponent } from './form-field/form-field.component';
 import { TwLabelDirective } from './tw-label/tw-label.directive';
 import { TwInputDirective } from './tw-input/tw-input.directive';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TwButtonComponent } from './tw-button/tw-button.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormFieldComponent,
     TwLabelDirective,
     TwInputDirective,
+    TwButtonComponent,
 
   ],
   imports: [
